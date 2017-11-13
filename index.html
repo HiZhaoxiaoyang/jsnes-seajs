@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>FC游戏模拟器</title>
+    <link rel="stylesheet" type="text/css" href="./main.css">
+</head>
+
+<body>
+    <h1>FC游戏模拟</h1>
+    
+    <div id="emulator"></div>
+    
+    <h2>Controls</h2>
+    <table id="controls" width="90%" align="center">
+        <tr align="left">
+            <th>按键</th>
+            <th>玩家 1</th>
+            <th>玩家 2</th>
+        </tr>
+        <tr>
+            <td>左</td>
+            <td>A | Left</td>
+            <td>Num-4</td>
+        <tr>
+            <td>右</td>
+            <td>D | Right</td>
+            <td>Num-6</td>
+        </tr>
+        <tr>
+            <td>下</td>
+            <td>W | Up</td>
+            <td>Num-8</td>
+        </tr>
+        <tr>
+            <td>上</td>
+            <td>S | Down</td>
+            <td>Num-2</td>
+        </tr>
+        <tr>
+            <td>A</td>
+            <td>K | X</td>
+            <td>Num-7</td>
+        </tr>
+        <tr>
+            <td>B</td>
+            <td>J | Z/Y</td>
+            <td>Num-9</td>
+        </tr>
+        <tr>
+            <td>开始</td>
+            <td>1 | Enter</td>
+            <td>Num-1</td>
+        </tr>
+        <tr>
+            <td>选择</td>
+            <td>2 | Ctrl</td>
+            <td>Num-3</td>
+        </tr>
+    </table>
+
+    <script src="lib/sea.js" type="text/javascript" charset="utf-8"></script>
+    <script src="lib/jquery3.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+
+    <!--[if IE]>
+        <script type="text/vbscript" src="source/jsnes-ie-hacks.vbscript"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        seajs.config({
+            base:'./',
+            paths:{
+                source: 'source',
+                lib: 'lib'
+            }
+        });
+        seajs.use('main', function(main){
+            main.init();
+        });
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+@media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+    html {
+        font-size:10px;
+    }
+}
+@media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+    html {
+        font-size:20px;
+    }
+}
+body{
+    width: 100%;
+    background: black;
+    color: white;
+    font-weight: bolder;
+    overflow-x: hidden;
+}
+select{
+    font-size: 1.5rem;
+    background: white;
+    margin: .5rem;
+}
+input{
+    font-size: 1.2rem;
+}
